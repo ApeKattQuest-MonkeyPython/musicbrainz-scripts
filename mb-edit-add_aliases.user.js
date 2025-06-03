@@ -12,7 +12,7 @@
 // @description  musicbrainz.org edit: Add entity aliases in batch
 // @compatible   firefox+tampermonkey
 // @license      MIT
-// @require      https://raw.githubusercontent.com/loujine/musicbrainz-scripts/master/mbz-loujine-common.js
+// @require      https://raw.githubusercontent.com/ApeKattQuest-MonkeyPython/musicbrainz-scripts/master/mbz-loujine-common.js
 // @include      http*://*musicbrainz.org/*/*/aliases*
 // @exclude      http*://*musicbrainz.org/doc/*
 // @grant        none
