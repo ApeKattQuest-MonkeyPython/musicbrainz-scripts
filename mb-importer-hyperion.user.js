@@ -3,8 +3,8 @@
 // ==UserScript==
 // @name         Import Hyperion/Helios releases to MusicBrainz
 // @namespace    mbz-loujine
-// @author       loujine
-// @version      2021.4.10
+// @author       loujine, reosarevok
+// @version      2026.3.19
 // @downloadURL  https://raw.githubusercontent.com/loujine/musicbrainz-scripts/master/mb-importer-hyperion.user.js
 // @updateURL    https://raw.githubusercontent.com/loujine/musicbrainz-scripts/master/mb-importer-hyperion.user.js
 // @supportURL   https://github.com/loujine/musicbrainz-scripts
@@ -15,12 +15,14 @@
 // @require      https://raw.githubusercontent.com/murdos/musicbrainz-userscripts/master/lib/mbimport.js
 // @include      http*://www.hyperion-records.co.uk/dc.asp?dc=D_*
 // @include      http*://www.hyperion-records.co.uk/al.asp?al=*
+// @include      http*://www.hyperion-records.co.uk/dw.asp?dc=W*
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==
 
 const catno = document.URL.split('/')[3].replace('dc.asp?dc=D_', '')
-                                        .replace('al.asp?al=', '');
+                                        .replace('al.asp?al=', '')
+                                        .replace('dw.asp?dc=W','');
 
 const months = {
     'January': 1, 'February': 2, 'March': 3, 'April': 4,
@@ -42,6 +44,11 @@ const labels = {
     'CDH': {
         'name': 'helios',
         'mbid': '0a94e96a-9219-4dd7-a529-18d34e77f50f',
+        'catno': catno,
+    },
+    'HYP': {
+        'name': 'hyperion',
+        'mbid': '08e6c3c8-81ab-405f-9cff-10f6b8db064c',
         'catno': catno,
     },
     'SIG': {
@@ -110,7 +117,9 @@ function extract_release_data() {
                 'joinphrase': ', '
             })
         );
-        list[list.length - 1].joinphrase = '';
+        if (list.length) {
+            list[list.length - 1].joinphrase = '';
+        }
         return list;
     }
 
