@@ -322,6 +322,7 @@ class Server {
         'Tatar': 'tt',
         'Telugu': 'te',
         'Thai': 'th',
+        'Tibethan': 'bo',
         'Tok Pisin': 'tpi',
         'Turkish': 'tr',
         'Ukrainian': 'uk',
