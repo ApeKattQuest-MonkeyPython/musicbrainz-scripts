@@ -292,6 +292,7 @@ class Server {
         'Persian': 'fa',
         'Polish': 'pl',
         'Portuguese': 'pt',
+        'Portuguese Brazilian': 'pt_BR',
         'Punjabi': 'pa',
         'Quechua': 'qu',
         'Romanian': 'ro',
