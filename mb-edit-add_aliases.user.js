@@ -3,14 +3,14 @@
 // ==UserScript==
 // @name         MusicBrainz edit: Add entity aliases in batch
 // @namespace    mbz-loujine-fix
-// @author       loujine
-// @version      2026.4.08
+// @author       loujine/MonkeyPython
+// @version      2026.10.15
 // @downloadURL  https://raw.githubusercontent.com/ApeKattQuest-MonkeyPython/musicbrainz-scripts/Update-my-own/mb-edit-add_aliases.user.js
 // @updateURL    https://raw.githubusercontent.com/ApeKattQuest-MonkeyPython/musicbrainz-scripts/Update-my-own/mb-edit-add_aliases.user.js
 // @supportURL   https://github.com/loujine/musicbrainz-scripts
-// @icon         https://raw.githubusercontent.com/loujine/musicbrainz-scripts/master/icon.png
+// @icon         https://raw.githubusercontent.com/ApeKattQuest-MonkeyPython/musicbrainz-scripts/Update-my-own/icon.png
 // @description  musicbrainz.org edit: Add entity aliases in batch
-// @compatible   firefox+tampermonkey
+// @compatible   vivaldi+violentmonkey
 // @license      MIT
 // @require      https://raw.githubusercontent.com/ApeKattQuest-MonkeyPython/musicbrainz-scripts/Update-my-own/mbz-loujine-common.js
 // @include      http*://*musicbrainz.org/*/*/aliases*
