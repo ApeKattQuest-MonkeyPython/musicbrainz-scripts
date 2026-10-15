@@ -273,7 +273,7 @@ class Server {
         'Lombard': 'lmo',
         'Lingala': 'ln',      
         'Low German': 'nds',
-        'Low Saxon': 'nds_NL',
+        'Low Saxon aka West Low German': 'nds_NL',
         'Lule Sami': 'smj',
         'Luxembourgish': 'lb',
         'Māori': 'mi',
